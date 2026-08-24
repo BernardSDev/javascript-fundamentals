@@ -1,29 +1,18 @@
-function drawStraightLine(x) {
-    const result= 2*x + 1
-    return result
+function welcomeUser(user) {
+    console.log("Welcome back, " + user)
 }
 
-// const p3 = drawStraightLine(0)
-// console.log(p3)
+// welcomeUser("Kojo")
 
-// console.log(drawStraightLine(3))
 
-function multiply(x,y) {
-    const result = x*y
-    return result
+function shoppingNotice(name, item) {
+    console.log("Hi " + name + ",you have "  +  item + " items in your cart")
 }
 
-// console.log(multiply(90,100))
+// shoppingNotice("Kojo", 3)
 
-function isQualifyToVote(name, age) {
-    let message = "";
-    if(age >= 18) {
-        message = `${name} who is ${age} years old is eligible to vote`
-    } else {
-        message = `${name} who is ${age} years old is not eligible to vote`
-    }
-
-    return message
+function fullName(firstName, lastName) {
+    console.log("Your full name is  " + firstName + lastName);
 }
 
-console.log(isQualifyToVote("Tatiana", 1))
+fullName(" Kojo ", " Barnieh ")
